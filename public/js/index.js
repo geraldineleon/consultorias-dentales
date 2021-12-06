@@ -101,7 +101,7 @@ let newServiceWorker;
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
     navigator.serviceWorker
-      .register("/service-worker.js", { scope: "/form-consultas" })
+      .register("/service-worker.js", { scope: "/consultorias-dentales" })
       .then((registerEvent) => {
         registerEvent.addEventListener("updatefound", () => {
           newServiceWorker = registerEvent.installing;
