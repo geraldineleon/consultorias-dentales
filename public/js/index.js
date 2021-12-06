@@ -17,7 +17,7 @@ if (indexedDb && form) {
     console.log("Base de datos creada", db);
 
     const objectStore = db.createObjectStore("consultas", {
-      keyPath: "correo",
+      keyPath: "telefono",
     });
   };
 
